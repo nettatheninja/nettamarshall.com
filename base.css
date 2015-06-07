@@ -1,0 +1,38 @@
+*{ margin: 0; padding: 0; outline: 0; }
+.clear{clear: both}
+
+@font-face{font-family: "proxima-nova";font-weight: 100;}
+@font-face{font-family: "lobster",serif;font-style: normal;font-weight: 400;}
+
+body {font-family: "proxima-nova"; font-weight: 100;color: #5a5a5a;}
+
+a {color: #f0625b; text-decoration: none; padding-bottom: 2px;}
+a:hover {color: #f0625b; text-decoration: none; padding-bottom: 2px;}
+a:active {color: #f0625b; text-decoration: none; padding-bottom: 2px; position: relative; top: 1px;}
+
+.tiny{font-size: 16px;margin-bottom: 19px;color: #a4a4a4;}
+
+section{background-color: #fbfbfb; z-index: 100;}
+
+.label{font-size:250%;padding: 25px 0 0px 0;}
+
+img {max-width: 100%;}
+
+#intro {padding:100px 0px 0px 0px; line-height: 320%;position: relative;}
+.sub {display: block; display: inline;}
+.introcopy {font-size: 300%; padding:10px 0 100px 0;}
+
+#port{position:relative;}
+#port img {padding-bottom: 40px;}
+#port video {padding-bottom: 40px;}
+
+.contactcopy {font-size: 150%;padding-bottom:40px;}
+.drop {padding-top: 15px;}
+#follow{padding-bottom: 100px;}
+#follow ul li{list-style: none; display:inline; margin-right:30px;font-size: 150%}
+
+#empty{background:none;}
+
+#footer{background:url('images/foots.png') no-repeat center top; height: 900px; position: fixed; z-index: -99; background-size: cover; height: 100%; width: 100%; left: 0; top: 0; color:  #f5f5f5;}
+.footercontent {font-family:"lobster"; color: #f0625b;position:absolute; top:40%; left:100px;margin: 0px auto;font-size:650%; text-align: center;}
+
