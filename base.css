@@ -1,38 +1,78 @@
 *{ margin: 0; padding: 0; outline: 0; }
 .clear{clear: both}
 
-@font-face{font-family: "proxima-nova";font-weight: 100;}
-@font-face{font-family: "lobster",serif;font-style: normal;font-weight: 400;}
+html, body {
+	width: 100%;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
-body {font-family: "proxima-nova"; font-weight: 100;color: #5a5a5a;}
+body {
+	font-family: "FedraSerifA-Book";
+	color: #fff;
+	text-align: left;
+	background: linear-gradient(45deg, #a24bcf, #4b79cf, #4bc5cf);
+	background-size: 300% 300%;
+	
 
-a {color: #f0625b; text-decoration: none; padding-bottom: 2px;}
-a:hover {color: #f0625b; text-decoration: none; padding-bottom: 2px;}
-a:active {color: #f0625b; text-decoration: none; padding-bottom: 2px; position: relative; top: 1px;}
+-webkit-animation: AnimationName 60s ease infinite;
+-moz-animation: AnimationName 60s ease infinite;
+animation: AnimationName 60s ease infinite;
+}
 
-.tiny{font-size: 16px;margin-bottom: 19px;color: #a4a4a4;}
+@-webkit-keyframes AnimationName {
+    0%{background-position:87% 0%}
+    50%{background-position:14% 100%}
+    100%{background-position:87% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:87% 0%}
+    50%{background-position:14% 100%}
+    100%{background-position:87% 0%}
+}
+@keyframes AnimationName { 
+    0%{background-position:87% 0%}
+    50%{background-position:14% 100%}
+    100%{background-position:87% 0%}
+}
 
-section{background-color: #fbfbfb; z-index: 100;}
+#container{
+	width: 70%;
+	max-width: 830px;
+	margin: auto;
+	padding: 110px 0 0 0;
+}
 
-.label{font-size:250%;padding: 25px 0 0px 0;}
+h1, h2, p{
+	-webkit-font-smoothing: antialiased;
+	font-weight: normal;
+}
 
-img {max-width: 100%;}
+h1{
+	font-size: 30px;
+	line-height: 40px;
+}
 
-#intro {padding:100px 0px 0px 0px; line-height: 320%;position: relative;}
-.sub {display: block; display: inline;}
-.introcopy {font-size: 300%; padding:10px 0 100px 0;}
+p{
+	font-size: 20px;
+	margin: 20px 0;
+}
 
-#port{position:relative;}
-#port img {padding-bottom: 40px;}
-#port video {padding-bottom: 40px;}
+a, a:visited{
+	transition: .2s;
+	color: inherit;
+	text-decoration: none;
+}
 
-.contactcopy {font-size: 150%;padding-bottom:40px;}
-.drop {padding-top: 15px;}
-#follow{padding-bottom: 100px;}
-#follow ul li{list-style: none; display:inline; margin-right:30px;font-size: 150%}
+p a{
+	margin: 0;
+	padding: 0;
+	border-bottom: 3px solid rgba(255, 255, 255, .2);
+	display: inline-block;
+	line-height: 20px;
+}
 
-#empty{background:none;}
-
-#footer{background:url('images/foots.png') no-repeat center top; height: 900px; position: fixed; z-index: -99; background-size: cover; height: 100%; width: 100%; left: 0; top: 0; color:  #f5f5f5;}
-.footercontent {font-family:"lobster"; color: #f0625b;position:absolute; top:40%; left:100px;margin: 0px auto;font-size:650%; text-align: center;}
-
+a:hover {
+    opacity: .5;
+}
