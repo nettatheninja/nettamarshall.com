@@ -14,12 +14,12 @@ body {
 	color: #fff;
 	text-align: left;
 	background: linear-gradient(45deg, #a24bcf, #4b79cf, #4bc5cf);
-	background-size: 300% 300%;
+	background-size: 400% 400%;
 	
 
--webkit-animation: AnimationName 30s ease infinite;
--moz-animation: AnimationName 30s ease infinite;
-animation: AnimationName 30s ease infinite;
+-webkit-animation: AnimationName 120s ease infinite;
+-moz-animation: AnimationName 120s ease infinite;
+animation: AnimationName 120s ease infinite;
 }
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 99%}
