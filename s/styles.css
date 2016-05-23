@@ -1,0 +1,149 @@
+*{ margin: 0; padding: 0; outline: 0; }
+
+html, body{
+	min-width: 100%;
+	min-height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+	font-family: "Montserrat-Regular.ttf";src: url(/t/Montserrat-Regular.ttf);
+}
+
+body{
+	background-color: #fff;
+	color: #021F53;
+	-webkit-font-smoothing: antialiased;
+}
+
+.row {
+	position: relative;
+	width: 100%;
+}
+
+.row [class^="col"] {
+	float: left;
+	min-height: 0.125rem;
+}
+
+.col-left{
+	width: 20%;
+	height: 100px;
+}
+
+.col-right{
+	width: 80%;
+	padding:0;
+}
+
+#logo{
+	position: relative;
+	margin-top: 10%;
+	margin-left: 4%;
+	position: fixed;
+	max-width: 100%;
+}
+
+#intro{
+	font-family: "Montserrat-Regular.ttf";
+    line-height: 1em;
+    margin: 10% 25% 10% 0;
+}
+
+#outro, .description {
+    margin: 10% 25% 10% 0;
+}
+
+.work{
+	font-size: 0;
+	margin: 0;
+	padding:0;
+}
+
+.work img{
+	max-width: 100%;
+}
+
+h1, h2, p{
+	font-weight: normal;
+	margin:0;
+	padding: 0;
+}
+
+h1{
+	font-size: 1.9em;
+	line-height: 1.4em;
+}
+
+p{
+	font-size: 1.3em;
+	line-height: 1.5em;
+	margin: 20px 0;
+	font-family: "Montserrat-Regular.ttf";
+}
+
+p a{
+	margin: 0;
+	padding: 0;
+	border-bottom: 2px solid rgba(0, 200, 255, 0.4);
+	display: inline-block;
+}
+
+a, a:visited{
+	transition: .2s;
+	color: inherit;
+	text-decoration: none;
+}
+
+a:hover {
+    opacity: .7;
+}
+
+.custom-cursor{
+	cursor: url(/i/hover-circle.svg),pointer;
+}
+
+.last {
+	padding-bottom: 10%;
+}
+
+
+/* #Mobile (6s)
+================================================== */
+
+@media only screen and (max-width: 768px) {
+	h1{
+	    font-size: 1.3em;
+	}
+
+	p{
+		font-size: 1em;
+		margin: 20px 0;
+		font-family: "Montserrat-Regular.ttf";
+	}
+	#logo img{
+		position: relative;
+		margin-top: 10%;
+		position: fixed;
+		max-width: 10%;
+	}
+	#intro{
+		font-family: "Montserrat-Regular.ttf";
+	    line-height: 1em;
+	    margin: 22% 25% 10% 0;
+	}
+}
+
+/* #Mobile (320s)
+================================================== */
+
+	@media only screen and (max-width: 320px){
+		#intro{
+			font-size: 0.8em;
+		}
+
+		#outro{
+			font-size: 0.7em;
+		}
+}
