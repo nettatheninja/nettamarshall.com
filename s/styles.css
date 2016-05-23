@@ -38,13 +38,11 @@ body{
 }
 
 #logo{
-	width: 4em;
-	height:2em;
-	background-color: #ccc;
 	position: relative;
-	top: 45px;
-	left: 45px;
+	margin-top: 10%;
+	margin-left: 4%;
 	position: fixed;
+	max-width: 100%;
 }
 
 #intro{
@@ -53,7 +51,7 @@ body{
     margin: 10% 25% 10% 0;
 }
 
-#outro {
+#outro, .description {
     margin: 10% 25% 10% 0;
 }
 
@@ -102,20 +100,50 @@ a:hover {
     opacity: .7;
 }
 
-@media only screen and (max-width: 767px) {
-	#intro {
-    margin: 10% 15% 10% 0;
-  }
-
-	h1{
-	    font-size: 1.3em;
-
-	}
-
-  p{
-	font-size: 1em;
-	margin: 20px 0;
-	font-family: "Montserrat-Regular.ttf";
+.custom-cursor{
+	cursor: url(/i/hover-circle.svg),pointer;
 }
 
+.last {
+	padding-bottom: 10%;
+}
+
+
+/* #Mobile (6s)
+================================================== */
+
+@media only screen and (max-width: 768px) {
+	h1{
+	    font-size: 1.3em;
+	}
+
+	p{
+		font-size: 1em;
+		margin: 20px 0;
+		font-family: "Montserrat-Regular.ttf";
+	}
+	#logo img{
+		position: relative;
+		margin-top: 10%;
+		position: fixed;
+		max-width: 10%;
+	}
+	#intro{
+		font-family: "Montserrat-Regular.ttf";
+	    line-height: 1em;
+	    margin: 22% 25% 10% 0;
+	}
+}
+
+/* #Mobile (320s)
+================================================== */
+
+	@media only screen and (max-width: 320px){
+		#intro{
+			font-size: 0.8em;
+		}
+
+		#outro{
+			font-size: 0.7em;
+		}
 }
