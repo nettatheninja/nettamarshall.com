@@ -1,5 +1,0 @@
-AuthUserFile /home/157935/domains/nettamarshall.com/html/gde/.htpasswd
-AuthGroupFile /dev/null
-AuthName "Google"
-AuthType Basic
-require valid-user Google
